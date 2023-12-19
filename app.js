@@ -2,7 +2,7 @@ let params = new URLSearchParams(window.location.search);
 let id = params.get('id');
 console.log(id);
 
-fetch('http://api.chzzk.naver.com/polling/v1/channels/' + id + '/live-status')
+fetch('https://api.chzzk.naver.com/polling/v1/channels/' + id + '/live-status')
     .then(response => response.json())
     .then(data => console.log(data));
 
